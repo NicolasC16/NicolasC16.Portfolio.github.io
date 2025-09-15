@@ -485,6 +485,7 @@ textarea {
   .navbar {
     justify-content: space-between;
     padding: 0.8rem 1rem;
+    position: relative;
   }
 
   .navbar ul {
@@ -497,6 +498,7 @@ textarea {
     width: 200px;
     padding: 1rem;
     display: none;
+    z-index: 1000;
   }
 
   .navbar ul.show {
@@ -506,8 +508,13 @@ textarea {
   .navbar .hamburger {
     display: block;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
+    user-select: none
+  }
+
+  .hamburger{
+    display:none;
   }
 }
 
@@ -517,3 +524,4 @@ textarea {
   .Intro-Text { font-size: 20px; }
   #code-name-text { font-size: 18px; }
 }
+
