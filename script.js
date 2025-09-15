@@ -133,3 +133,22 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+
+// Mobile Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar ul");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  // Close menu when a link is clicked
+  navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  });
+}
+
+
