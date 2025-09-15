@@ -1,0 +1,439 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, poppins;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/*Font information*/
+
+@font-face {
+    font-family: roboto;
+    src: url(Fonts/Roboto-Black.ttf);
+}
+
+/* NavBar Information */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* keep items together on the left */
+    gap: 5rem;                    /* space between logo and links */
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    flex-wrap: nowrap;            /* prevent items from wrapping to new lines */
+    border-bottom: 2px solid #1e90ff;
+    font-family: roboto;
+}
+
+.logo-container{
+    flex-shrink: 0;
+    align-items: center;
+    overflow: hidden; /* Hides text while offscreen*/
+    font-size: 15px;
+}
+
+.bluetext{
+    color: #1e90ff;
+    font-size: 30px;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.navbar ul li{
+    margin-left: 0;
+}
+
+.navbar a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3 ease;
+    white-space: nowrap;
+}
+
+.navbar a:hover{
+    color: #ccc;
+}
+
+.navbar a:hover{
+    text-decoration: underline #ccc;
+}
+
+.slide-in-text{
+    transform: translateX(-100%);
+    animation: logoSlideIn 2.5s forwards;
+    animation-delay: 2s;
+}
+
+.nav-item1 {
+    opacity: 0;
+    animation: fadeIn1 2.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.nav-item2 {
+    opacity: 0;
+    animation: fadeIn2 2.5s forwards;
+    animation-delay: 1.3s;
+}
+
+.nav-item3 {
+    opacity: 0;
+    animation: fadeIn3 2.5s forwards;
+    animation-delay: 1s;
+}
+
+.nav-item4 {
+    opacity: 0;
+    animation: fadeIn4 2.5s forwards;
+    animation-delay: 0.8s;
+}
+
+.navbar a.active-link {
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+}
+
+/* Animation Code */
+
+@keyframes logoSlideIn {
+    to{
+        transform: translateX(0); /* The text slides to its final position */
+    }
+}
+
+@keyframes fadeIn1 {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2 {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn3 {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn4 {
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* Screen Code */
+
+.screen{
+    display: none;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.screen.active {
+    display: block;
+}
+
+
+/* Homescreen Base Code */
+
+.container{
+    background-color: #003153;
+    background-image: linear-gradient(315deg, #003153 0%, #1B1B1B 74%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 87vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#Homepage{
+    font-family: roboto;
+    font-size: 30px;
+}
+
+.Homepage-content {
+    display: flex;
+    align-items: center; /* Vertically Centers Image/Text */
+    justify-content: flex-start; /* keep image closer instead of far right */
+    padding: 50px;
+    gap: 15rem; /* reduce spacing between text and image */
+}
+
+.text-section{
+    flex: 0 1 auto; /* Take remaining width */
+}
+
+.image-section img{
+    transform: translateX(-800%);
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    background-color: transparent;
+    animation:
+        TextSlideIn 3.0s forwards,
+        bounce 2s infinite 3s;
+}
+
+/* Homescreen Text Code */
+
+.text1{
+    transform: translateX(-100%);
+    animation: TextSlideIn 2.5s forwards;
+    animation-delay: 1.2s ;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+.alt-text{
+    color: #1e90ff;
+}
+
+.text2{
+    transform: translateX(-200%);
+    animation: TextSlideIn 2.5s forwards;
+    animation-delay: 1s;
+    padding-left: 50px;
+    padding-bottom: 1px;
+    font-size: 50px;
+}
+
+.text3{
+    transform: translateX(-200%);
+    animation: TextSlideIn 2.5s forwards;
+    animation-delay: 0.8s;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    font-size: 25px;
+
+}
+
+/* Homescreen Button Code */
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#resume-btn{
+    border-radius: 2rem;
+    width: 150px;
+    height: 35px;
+    margin-left: 50px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transform: translateX(-500%);
+    animation: TextSlideIn 2.5s forwards;
+    animation-delay: 0.5s;
+    font-family: roboto;
+}
+
+#resume-btn:hover{
+    background-color: #74bdff;
+}
+
+
+#CV-btn{
+    border-radius: 2rem;
+    width: 150px;
+    height: 35px;
+    margin-left: 50px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transform: translateX(-500%);
+    animation: TextSlideIn 2.5s forwards;
+    animation-delay: 0.2s;
+    font-family: roboto;
+}
+
+#CV-btn:hover{
+    background-color: #74bdff;
+}
+
+
+/* Homescreen Animation Code */
+
+@keyframes TextSlideIn {
+    to{
+        transform: translateX(0); /* The text slides to its final position */
+    }
+}
+
+@keyframes bounce{
+     0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* About Me Section Code */
+
+.About-Me-Content {
+    display: flex;
+    align-items: center; /* Vertically Centers Image/Text */
+    justify-content: flex-start; /* keep image closer instead of far right */
+    padding: 50px;
+    gap: 10rem; /* reduce spacing between text and image */
+}
+
+
+.About-Me-Text{
+    flex: 0 1 auto; /* Take remaining width */
+}
+
+.About-Me-Text p{
+    font-size: 18px;
+}
+
+.About-Me-Image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.ViewProjects-btn{
+    border-radius: 2rem;
+    width: 150px;
+    height: 35px;
+    margin-top: 25px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    font-family: roboto;
+}
+
+/* Projects Page */
+
+.Intro-Text{
+    font-size: 30px;
+    text-align: center;
+}
+
+#code-name-text{
+    margin-top: 100px;
+    font-size: 25px;
+    color: #1e90ff;
+}
+
+#Project-Titles{
+    padding-top: 25px;
+    font-size: 20px;
+    color: red;
+}
+
+#project-explanation{
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+#Code-Documents{
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+/* Contact Page */
+
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.contact-form-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+@media (min-height: 700px) {
+    #Contact .contact-form-container {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}

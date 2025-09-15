@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nicolas Capetillo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="slide-in-text">My<span class="bluetext">Portfolio</span></div>
+        </div>
+        <ul>
+            <li><a href="#Homepage" class="nav-item1">Homepage</a></li>
+            <li><a href="#About-Me" class="nav-item2">About Me</a></li>
+            <li><a href="#Projects" class="nav-item3">Projects</a></li>
+            <li><a href="#Contact" class="nav-item4">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="screen active" id="Homepage">
+            <div class="Homepage-content">
+                <div class="text-section">
+                    <div class="text1">Hello, my <span class="alt-text">name </span>is</div>
+                    <div class="text2">Nicolas <span class="alt-text">Capetillo</span></div>
+                    <div class="text3">I'm a <span class="alt-text">Computer Engineering </span>Student.</div>
+                    <div class="btn-container">
+                        <a target="_blank" href="Files/Resume - Sophomore 2025 - Printed.pdf">
+                            <button id="resume-btn">Download my Resume</button>
+                        </a>
+                        <a target="_blank" href="Files/Capetillo_Nicolas_Coverletter_Portfolio.pdf">
+                            <button id="CV-btn">Download my Coverletter</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right side: Image-->
+                 <div class="image-section">
+                    <img src="IMGS/Sophomore Year Suit Picture.png" alt="Headshot of Nicolas">
+                 </div>
+            </div>
+        </div>
+
+        <!-- About Me Section-->
+        <div class="screen" id="About-Me">
+            <div class="About-Me-Content">
+                <div class="About-Me-Text">
+                    <p> Hi, I'm Nicolas Capetillo! I'm a second-year Computer 
+                        Engineering student at Texas Tech University with a 
+                        passion for robotics and hardware applications. My projects range from robotics 
+                        and automation to programming and hardware applications, 
+                        where I enjoy combining creativity with technical skills 
+                        to bring ideas to life. Outside of academics, I'm involved 
+                        in student organizations that let me collaborate with others and explore
+                        professional and academic opportunities. These organizations include
+                        the Society of Hispanic Professional Engineers, Robotics and Advanced
+                        Tech Society, and the Hispanic Student Society. 
+                        This website is my portfolio, which I am using as a space to share my work, 
+                        track my progress, and showcase the projects that represent my journey as 
+                        an engineer in the making.
+                    </p>
+
+                <a href="#Projects">
+                    <button id="projects-btn" class="ViewProjects-btn">View my projects</button>
+                </a>
+
+                </div>
+                
+                <div class="About-Me-Image">
+                    <img src="IMGS/Sophomore Year Headshot.jpg" alt="Headshot of Nicolas Capetillo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div class="screen" id="Projects">
+            <div class="Projects-Content">
+                <div class="Page-Text">
+                    <h2 class="Intro-Text">
+                        Welcome to my projects page. This page displays
+                        my experience in working with various programming languages.
+                    </h2><br>
+
+                    <h3 class="Intro-Text">
+                        Over the past two years I have developed expereince in 
+                        C/C++, Python, Arduino, HTML, JavaScript, and CSS.
+                    </h3><br>
+                </div>
+                <div class="JS-HTML-CSS-Projects">
+                    <h2 id="code-name-text">
+                        JavaScript/HTML/CSS Projects:
+                    </h2><br>
+
+                    <h3 id="Project-Titles">
+                        Texas Tech Quiz Game
+                    </h3><br>
+
+                    <p id="project-explanation">
+                        Texas Tech Quiz Game is a trivia based website that I made using HTML, CSS, and Javascript.
+                        Test out your knowledge and see how much you know about our great campus.
+                        This project helped me strengthen my foundations in all three of these programming languages
+                        which helped me develop this portfolio over time. Scroll down to see the individual files displaying
+                        my coding struture for this project. 
+                    </p> <br>
+
+                    <iframe src="https://nicolasc16.github.io/NicolasC16.QuizGame.github.io/" width="600px" height="400px" title="Quiz Game"></iframe><br>
+
+                    <h3 id="Code-Documents">Quiz Game HTML Code</h3>
+                    <iframe src="Files/Quiz Game HTML.pdf" width="400px" height="500px" title="Quiz Game HTML"></iframe><br>
+
+                    <h3 id="Code-Documents">Quiz Game CSS Code</h3>
+                    <iframe src="Files/Quiz Game CSS.pdf" width="400px" height="500px" title="Quiz Game HTML"></iframe><br>
+
+                    <h3 id="Code-Documents">Quiz Game JavaScript Code</h3>
+                    <iframe src="Files/Quiz Game Java Script.pdf" width="400px" height="500px" title="Quiz Game HTML"></iframe><br>
+
+                    <h3 id="Project-Titles">
+                        MyPortfolio
+                    </h3><br>
+
+                    <p id="project-explanation">
+                        MyPortfolio is a digital portfolio demonstrating my skills with HTML/CSS/JavaScript. 
+                        This portfolio has all information about myself, my skills, and my knowledge in programming
+                        and hardware applications. 
+                    </p><br>
+
+                                        <h3 id="Code-Documents">MyPortfolio HTML Code</h3>
+                    <iframe src="Files/Portfolio HTML.pdf" width="400px" height="500px" title="MyPortfolio HTML"></iframe>
+
+                    <h3 id="Code-Documents">MyPortfolio CSS Code</h3>
+                    <iframe src="Files/Portfolio CSS.pdf" width="400px" height="500px" title="MyPortfolio CSS"></iframe>
+
+                    <h3 id="Code-Documents">MyPortfolio JavaScript Code</h3>
+                    <iframe src="Files/Portfolio JavaScript (1).pdf" width="400px" height="500px" title="MyPortfolio JavaScript"></iframe>
+
+                </div>
+
+                <div class="Python Projects">
+                    <h2 id="code-name-text">Python Projects</h2><br>
+
+                    <h3 id="Project-Titles">Mystery Digits</h3><br>
+                    <video src="Videos/Mystery Digits Recording.mp4" width="600px" height="400px" controls="controls"></video><br><br>
+                    <p id="project-explanation">
+                        Mystery Digits is a game that I made using python/pygame. This project was used my freshman year for my 
+                        HONS 1301 course where I was tasked with demonstrating how humans interact with machines in a way that 
+                        corresponds with  my major. While this game may look like a normal number guessing game at first, it was
+                        programmed to be impossible to win. I did this to talk about the topic of my project which was how humans
+                        would interact with a cheating system. Below is the files detailing the structure of my code. 
+                    </p> <br>
+
+                    <h3 id="Code-Documents">Mystery Digits.py</h3>
+                    <p id="project-explanation">Manages the main game loop and menu system.</p><br>
+                    <iframe src="Files/Mystery Digits.py.pdf" width="400px" height="500px"></iframe><br>
+
+
+                    <h3 id="Code-Documents">Menu.py</h3>
+                    <p id="project-explanation">Contains all menu classes and game logic for round 1.</p><br>
+                    <iframe src="Files/menu.py.pdf" width="400px" height="500px"></iframe><br><br>
+                    
+
+                    <h3 id="Code-Documents">Game.py</h3>
+                    <p id="project-explanation">Entry point of the game. This file begins the application.</p>
+                    <iframe src="Files/Game.py.pdf" width="400px" height="500px"></iframe><br><br>
+                    
+                </div>
+
+                <div class="C-Cpp-Projects">
+                    <h2 id="code-name-text">
+                        C/C++ Projects:
+                    </h2><br>
+                    <h3 id="Project-Titles">Traffic Lights Project</h3>
+                    <video src="Videos/Stop Light Project.mp4", width="600px" height="400px" controls="controls"></video><br><br>
+                    <p id="project-explanation">This project was created using arduino hardware and software. The basis of this project
+                        was to program an arduino board to simulate the traffic lights at the intersection of 
+                        two streets. 
+                    </p><br>
+                    <h3 id="Code-Documents">Hardware Diagram/Code Structure</h3>
+                    <iframe src="Files/ECE 2305 - Hardware Project 01.pdf" width="400px" height="500px"></iframe><br>
+
+                    <h3 id="Project-Titles">7 Segment Display Project</h3><br>
+                    <video src="Videos/Button.mp4" width="600px" height="400px" controls="controls"></video><br>
+                    <p id="project-explanation"> The purpose of this project was to program an Arduino board to accept a 4-bit binary input and display the 
+                        numerical value (0 to 9) on a 7-Segment LED display.
+                    </p><br>
+                    <iframe src="Files/ECE 2305 - Hardware Project 02.pdf" width="400px" height="500px"></iframe><br>
+
+                    <h3 id="Project-Titles">Digital VU Meter</h3><br>
+                    <video src="Videos/Digital Meter.mp4" width="600px" height="400px" controls="controls"></video><br>
+                    <p id="project-explanation"> 
+                        The purpose of this project was to program an arduino board to accept an analog input voltage and 
+                        display the magnitude of the voltage using a 10 LED display. 
+                    </p><br>
+                    <iframe src="Files/ECE 2305 - Hardware Project 03.pdf" width="400px" height="500px"></iframe><br>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+         <div class="screen" id="Contact">
+            <div class="contact-form-container">
+                <h2>Contact Me <a href="mailto:nicolascapetillo2023@yahoo.com" title="Click to send me an email.">*This does not work at the moment*</a></h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+            
+
+    </div>
+    <!-- External JavaScript -->
+     <script src="script.js"></script>
+</body>
+</html>
